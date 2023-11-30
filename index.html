@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wave Form Displayer</title>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
+    
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+    <div class="upload-area">
+        <h2>Wave form Display</h2>
+        <input type="file" id="upload"/>
+    </div>
     <div class="container">
-        <input type="file" id="upload" />
+        
         <div id="waveform"></div>
-        <button id="play">play</button>
-        <button id ="stop">stop</button>
+        
+        <div class="controls">
+            <i class="fa-solid fa-play" id = "play"></i>
+            <i class="fa-solid fa-stop" id ="stop"></i>
+        </div>
+
+       
     </div>
 
 
-    
-    
+    <script src="https://kit.fontawesome.com/2b3c29eec9.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>   
 </body>
 </html>

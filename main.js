@@ -20,3 +20,15 @@ var wavesurfer = WaveSurfer.create({
 wavesurfer.on('ready', function () {
     wavesurfer.play();
 });
+
+document.getElementById("play").addEventListener("click", function() {
+    if (wavesurfer.isPlaying()) {
+        wavesurfer.pause();
+    } else {
+        wavesurfer.play();
+    }
+});
+
+document.getElementById("stop").addEventListener("click", function() {
+    wavesurfer.stop();
+});
